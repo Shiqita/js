@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<link href="bootstrap.css" rel="stylesheet">
+		<link  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"rel="stylesheet" crossorigin="anonymous">
+		<script src="bootstrap.js"></script>
+		<script type="text/javascript">
+		$(function () {$('[data-toggle="tooltip"]').tooltip()})
+	    </script>
+		<link href="stailu.css" rel="stylesheet" type="text/css"> 
+     <script> 
+         function  push(){  
+         var n = 7, m = 5, k=70,i,j,l,o;
+         var mas = [];
+             for ( i = 0; i < m; i++) {
+	             mas[i] = [];
+	         for ( j = 0; j < n; j++) {
+		         mas[i][j] = k;
+		         k--;
+                 } }
+            for( o = 0 ; o <= 5;o++) {
+              for ( j = 0; j < n; j++) {           
+                for ( i = 0; i < m; i++) {
+	           	  if ( i < 4 ){
+	           	 if ( mas[i][j] > mas[i+1][j] ) {
+	          	    l=mas[i][j];
+	          	 	mas[i][j]=mas[i+1][j];
+	          	 	mas[i+1][j]=l;
+	          	 }
+                 }
+            } }
+            }console.log(mas);
+            }        
+      </script>
+	</head>
+	<body background="Fon.jpg">
+     <header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Javascript</a></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown drophover">
+							<a class="nav-link dropdown-toggle" href="home.html" role="button" aria-haspopup="true" aria-expanded="false">Задания</a>
+							<div class="dropdown-menu">
+								<div class="btn-group dropright drophover">
+									<a class="dropdown-toggle dropdown-item" style="cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Меню-путеводитель
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="JavaScript4.1.html">JavaScript4.1<i class="fab fa-alipay"></i></a>
+										<a class="dropdown-item" href="JavaScript4.2.html">JavaScript4.2<i class="far fa-lightbulb"></i></a>
+										<a class="dropdown-item" href="JavaScript4.3.html">JavaScript4.3<i class="fas fa-file-code"></i></a>
+										<a class="dropdown-item" href="JavaScript4.4.html">JavaScript4.4<i class="fas fa-barcode"></i></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#" data-toggle="modal" data-target="#myModal">Special</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="home.html">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">JavaScript4.3</li>
+				</ol>
+			</nav>
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog" role="document">
+					<div class="card border-warning">
+						<div class="card-header bg-warning text-white">
+							Modal window
+						</div>
+						<div class="card-body">
+							<p>Am i right?</p>
+							<hr>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+      		<div class="leftbar">
+			
+		</div>
+		<div class="center">
+       <table id="matrix" class="matrix">
+       	<tr>
+        	<td><b>70</b></td>
+        	<td><b>69</b></td>
+        	<td><b>68</b></td>
+        	<td><b>67</b></td>
+        	<td><b>66</b></td>
+        	<td><b>65</b></td>
+        	<td><b>64</b></td>
+        </tr>
+        <tr>
+        	<td><b>63</b></td>
+        	<td><b>62</b></td>
+        	<td><b>41</b></td>
+        	<td><b>60</b></td>
+        	<td><b>59</b></td>
+        	<td><b>58</b></td>
+        	<td><b>57</b></td>
+        </tr>
+        <tr>
+        	<td><b>56</b></td>
+        	<td><b>55</b></td>
+        	<td><b>54</b></td>
+        	<td><b>53</b></td>
+        	<td><b>52</b></td>
+        	<td><b>51</b></td>
+        	<td><b>50</b></td>
+        </tr>
+        <tr>
+        	<td><b>49</b></td>
+        	<td><b>48</b></td>
+        	<td><b>47</b></td>
+        	<td><b>46</b></td>
+        	<td><b>45</b></td>
+        	<td><b>44</b></td>
+        	<td><b>43</b></td>
+        </tr>
+        <tr>
+        	<td><b>42</b></td>
+        	<td><b>41</b></td>
+        	<td><b>40</b></td>
+        	<td><b>39</b></td>
+        	<td><b>38</b></td>
+        	<td><b>37</b></td>
+        	<td><b>36</b></td>
+        </tr>
+    </table>
+    <form>
+         <p><input type="button" value="Отсортировать Матрицу" onClick="push()"></p>
+     </form>
+    </div>
+	</body>
+</html>

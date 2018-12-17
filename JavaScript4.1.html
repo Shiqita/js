@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>Javascript</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<link href="bootstrap.css" rel="stylesheet">
+		<link  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"rel="stylesheet" crossorigin="anonymous">
+		<script src="bootstrap.js"></script>
+		<script type="text/javascript">
+		$(function () {$('[data-toggle="tooltip"]').tooltip()})
+	    </script>
+		<link href="stailu.css" rel="stylesheet" type="text/css">
+		 <script type="text/javascript">
+            function push(){
+                var a = parseInt(document.getElementById('a').value);
+                var S = a*a;
+                if (!a) { 
+                    return alert("Молодой Человек! Вы таки забыли ввести Сторону Квадрата!");
+                }
+                console.log(S);
+                document.getElementById("S").innerHTML = S;
+            } 
+        </script>  
+	</head>
+	<body background="Fon.jpg">
+     <header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Javascript</a></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown drophover">
+							<a class="nav-link dropdown-toggle" href="home.html" role="button" aria-haspopup="true" aria-expanded="false">Задания</a>
+							<div class="dropdown-menu">
+								<div class="btn-group dropright drophover">
+									<a class="dropdown-toggle dropdown-item" style="cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Меню-путеводитель
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="JavaScript4.1.html">JavaScript4.1<i class="fab fa-alipay"></i></a>
+										<a class="dropdown-item" href="JavaScript4.2.html">JavaScript4.2<i class="far fa-lightbulb"></i></a>
+										<a class="dropdown-item" href="JavaScript4.3.html">JavaScript4.3<i class="fas fa-file-code"></i></i></a>
+										<a class="dropdown-item" href="JavaScript4.4.html">JavaScript4.4<i class="fas fa-barcode"></i></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#" data-toggle="modal" data-target="#myModal">Special</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="home.html">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">JavaScript4.1</li>
+				</ol>
+			</nav>
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog" role="document">
+					<div class="card border-success">
+						<div class="card-header bg-success text-white">
+							Modal window
+						</div>
+						<div class="card-body">
+							<p>Am i right?</p>
+							<hr>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="leftbar">
+			
+		</div>
+		<div class="center">
+       <form>
+            <p><b>Сторона Квадрата</b><input type="text" id="a"></p>
+            <p><input type="button" value="Ответ" onClick="push()"></p>
+        </form>
+        <br><br>
+        <h2 id="time">Площадь Квадрата = <span id="S"></span></h2>
+    </div>
+	</body>
+</html>

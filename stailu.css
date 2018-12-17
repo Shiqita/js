@@ -1,0 +1,35 @@
+.drophover:hover > .dropdown-menu{
+    display: block;
+    margin: 0;
+    }
+.carousel-item
+      {
+      height: 550px;
+      }
+.carousel-item img
+      {
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+      }
+.backFill
+      {
+      background: linear-gradient(to left, #444, #000, #444);
+      }
+.karusel{
+ width:60%;
+ height:100%;
+}
+.center{
+padding-top:7%; 
+float:left;
+width:33%;
+}
+.leftbar{
+float:left;
+width:37%;
+height:100%;  
+}
+.matrix{
+  width:400;
+}

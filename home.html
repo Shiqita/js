@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title>BOOSTRAP</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link href="bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<link href="bootstrap.css" rel="stylesheet">
+		<link  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"rel="stylesheet" crossorigin="anonymous">
+		<script src="bootstrap.js"></script>
+		<script type="text/javascript">
+		$(function () {$('[data-toggle="tooltip"]').tooltip()})
+	    </script>
+		<link href="stailu.css" rel="stylesheet" type="text/css">  
+	</head>
+	<body background="Fon.jpg">
+	    <header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Bootstrap</a></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown drophover">
+							<a class="nav-link dropdown-toggle" href="home.html" role="button" aria-haspopup="true" aria-expanded="false">Задания</a>
+							<div class="dropdown-menu">
+								<div class="btn-group dropright drophover">
+									<a class="dropdown-toggle dropdown-item" style="cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Меню-путеводитель
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="Karusel.html">Karusel<i class="fas fa-dragon"></i></a>
+										<a class="dropdown-item" href="Picture.html">Picture<i class="far fa-images"></i></a>
+										<a class="dropdown-item" href="MathML.html">MathML<i class="fas fa-superscript"></i></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#" data-toggle="modal" data-target="#myModal"></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active"><a href="home.html">Home</a></li>
+				</ol>
+			</nav>
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog" role="document">
+					<div class="card border-info">
+						<div class="card-header bg-dark text-white">
+							Modal window
+						</div>
+						<div class="card-body">
+							<p>Am i right?</p>
+							<hr>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-xl-3">
+						<div id="accordion">
+							
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h5 class="mb-0">
+									<button class="btn btn-link" data-toggle="collapse" data-target="#SiteMap" aria-expanded="true" aria-controls="SiteMap">
+									 Other
+									</button>
+									</h5>
+								</div>
+								<div id="SiteMap" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<ul>
+											<li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i>Youtube</a></li>
+											<li><a href="https://www.google.com"><i class="fab fa-google"></i>oogle</a></li>
+											<li><a href="https://vk.com/dechenccko">Me <i class="fas fa-child"></i></a></li>
+										</ul>
+									</div>
+								</div>
+						  </div>
+					</div>
+				</div>
+					<div class="col-md-8 col-xl-9">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">№</th>
+									<th scope="col">Name</th>
+									<th scope="col">Links</th>
+									<th scope="col">Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td><a href="Karusel.html" class="badge badge-pill badge-light">Karusel</a></td>
+									<td><a href="Karusel.html">Karusel.html</a></td>
+									<td>Страница с каруселью. (Задание номер 3)</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td><a href="Picture.html" class="badge badge-pill badge-secondary">Picture</a></td>
+									<td><a href="Picture.html">Picture.html</a></td>
+									<td>Страница с картиннкой свинки. (Задание номер 3)</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td><a href="MathML.html" class="badge badge-pill badge-dark">MathML</a></td>
+									<td><a href="MathML.html">MathML.html</a></td>
+									<td>Математические формулы. (Задание номер 3)</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td><a href="home.html" class="badge badge-pill badge-info">Home</a></td>
+									<td><a href="home.html">home.html</a></td>
+									<td>Главная. (Связующая страница)</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td><a href="JavaScript4.1.html" class="badge badge-pill badge-success">JavaScript4.1</a></td>
+									<td><a href="JavaScript4.1.html">JavaScript4.1.html</a></td>
+									<td>1-ое задние по JS (4.1)   Вариант №1</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td><a href="JavaScript4.2.html" class="badge badge-pill badge-danger">JavaScript4.2</a></td>
+									<td><a href="JavaScript4.2.html">JavaScript4.2.html</a></td>
+									<td>2-ое задние по JS (4.2)   Вариант №7</td>
+								</tr>
+								<tr>
+									<th scope="row">7</th>
+									<td><a href="JavaScript4.3.html" class="badge badge-pill badge-warning">JavaScript4.3</a></td>
+									<td><a href="JavaScript4.3.html">JavaScript4.3.html</a></td>
+									<td>3-ое задние по JS (4.3)   Вариант №14</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><a href="JavaScript4.4.html" class="badge badge-pill badge-primary">JavaScript4.4</a></td>
+									<td><a href="JavaScript4.4.html">JavaScript4.4.html</a></td>
+									<td>4-ое задние по JS (4.4)   Вариант №2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
